@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Binda Beauty SZ — Luxury Braiding Salon in Manzini, Eswatini</title>
+<meta name="description" content="Binda Beauty SZ is a luxury braiding salon in Manzini, Eswatini. Box braids, knotless, cornrows, twists, locs and more. Book your appointment today." />
+<meta name="keywords" content="Binda Beauty SZ, braiding salon Manzini, Eswatini braids, box braids Eswatini, knotless braids, cornrows, hair salon Manzini" />
+<meta property="og:title" content="Binda Beauty SZ — Luxury Braiding Salon" />
+<meta property="og:description" content="Luxury braiding salon in Manzini, Eswatini." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  :root{
+    --pink:#f5d6d6;
+    --pink-soft:#fbeaea;
+    --rose-gold:#b76e79;
+    --rose-gold-dark:#8c4f58;
+    --beige:#f5efe6;
+    --cream:#fdfaf6;
+    --sage:#a8b8a0;
+    --sage-dark:#7a8c72;
+    --ink:#2b2222;
+    --muted:#7a6b6b;
+    --white:#ffffff;
+    --shadow:0 10px 40px rgba(140,79,88,.12);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Jost',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    font-weight:300;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:.5px;line-height:1.2}
+  h1{font-size:clamp(2.5rem,6vw,4.8rem)}
+  h2{font-size:clamp(2rem,4vw,3.2rem)}
+  h3{font-size:1.6rem}
+  a{color:inherit;text-decoration:none;transition:.3s}
+  img{max-width:100%;display:block}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-family:'Jost',sans-serif;
+    font-size:.75rem;letter-spacing:.4em;text-transform:uppercase;
+    color:var(--rose-gold);font-weight:500;margin-bottom:14px;display:inline-block;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 32px;border-radius:999px;
+    background:var(--rose-gold);color:#fff;font-weight:400;
+    letter-spacing:.15em;text-transform:uppercase;font-size:.78rem;
+    border:none;cursor:pointer;transition:.3s;
+  }
+  .btn:hover{background:var(--rose-gold-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
+  .btn-outline{background:transparent;color:var(--rose-gold);border:1px solid var(--rose-gold)}
+  .btn-outline:hover{background:var(--rose-gold);color:#fff}
+
+  /* ===== NAV ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(253,250,246,.92);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(183,110,121,.1);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1300px;margin:0 auto}
+  .logo{display:flex;align-items:center;gap:12px;font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--rose-gold-dark)}
+  .logo img{height:48px;width:48px;border-radius:50%;object-fit:cover;border:1px solid var(--pink)}
+  .logo span small{display:block;font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.35em;color:var(--muted);text-transform:uppercase}
+  .nav-links{display:flex;gap:36px;list-style:none}
+  .nav-links a{font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);position:relative}
+  .nav-links a:hover{color:var(--rose-gold)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--rose-gold);transition:.3s}
+  .nav-links a:hover::after{width:100%}
+  .burger{display:none;font-size:1.5rem;color:var(--rose-gold-dark);background:none;border:none;cursor:pointer}
+
+  @media(max-width:900px){
+    .nav-links{
+      position:fixed;top:80px;left:0;right:0;
+      background:var(--cream);flex-direction:column;
+      padding:30px;gap:20px;transform:translateY(-150%);transition:.4s;
+      box-shadow:var(--shadow);
+    }
+    .nav-links.open{transform:translateY(0)}
+    .burger{display:block}
+  }
+
+  /* ===== HERO ===== */
+  .hero{
+    margin-top:80px;min-height:90vh;
+    background:#2b1b3d;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    color:#fff;padding:80px 24px;position:relative;
+  }
+  .hero-content{max-width:780px}
+  .hero .eyebrow{color:var(--pink)}
+  .hero h1{color:#fff;margin-bottom:24px;font-weight:400}
+  .hero h1 em{font-style:italic;color:var(--pink)}
+  .hero p{font-size:1.1rem;font-weight:300;margin-bottom:36px;opacity:.95}
+  .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  /* ===== SECTIONS ===== */
+  section{padding:100px 0}
+  .section-head{text-align:center;margin-bottom:60px}
+  .section-head p{color:var(--muted);max-width:600px;margin:16px auto 0}
+
+  /* ===== ABOUT ===== */
+  .about{background:var(--beige)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .about-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+  .about-img img{width:100%;height:100%;object-fit:cover}
+  .about p{color:var(--muted);margin:20px 0}
+  .about ul{list-style:none;margin:24px 0}
+  .about ul li{padding:8px 0;display:flex;align-items:center;gap:12px}
+  .about ul li i{color:var(--rose-gold)}
+  @media(max-width:768px){.about-grid{grid-template-columns:1fr}}
+
+  /* ===== SERVICES ===== */
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+  .service-card{
+    background:#fff;border-radius:var(--radius);overflow:hidden;
+    box-shadow:0 6px 24px rgba(140,79,88,.08);transition:.4s;
+  }
+  .service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .service-card .img{aspect-ratio:4/3;overflow:hidden}
+  .service-card img{width:100%;height:100%;object-fit:cover;transition:.6s}
+  .service-card:hover img{transform:scale(1.08)}
+  .service-card .body{padding:26px}
+  .service-card h3{color:var(--rose-gold-dark);margin-bottom:8px}
+  .service-card p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+  .price{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-top:16px;border-top:1px solid var(--pink-soft);
+  }
+  .price .amount{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--rose-gold);font-weight:600}
+  .price small{color:var(--muted);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+
+  /* ===== PRICE LIST ===== */
+  .pricelist{background:var(--pink-soft)}
+  .price-category{margin-bottom:50px}
+  .price-category h3{color:var(--rose-gold-dark);text-align:center;margin-bottom:24px;font-size:2rem}
+  .price-table{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);max-width:800px;margin:0 auto}
+  .price-row{
+    display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
+    padding:18px 0;border-bottom:1px dashed var(--pink);
+  }
+  .price-row:last-child{border-bottom:none}
+  .price-row .name{font-weight:500;font-size:1.05rem}
+  .price-row .desc{color:var(--muted);font-size:.85rem;margin-top:4px}
+  .price-row .cost{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--rose-gold);font-weight:600;white-space:nowrap}
+
+  /* ===== GALLERY ===== */
+  .gallery{columns:3;column-gap:16px}
+  .gallery img{
+    width:100%;border-radius:12px;margin-bottom:16px;
+    transition:.4s;cursor:pointer;
+  }
+  .gallery img:hover{transform:scale(1.02);box-shadow:var(--shadow)}
+  @media(max-width:900px){.gallery{columns:2}}
+  @media(max-width:500px){.gallery{columns:1}}
+
+  /* ===== POLICIES ===== */
+  .policies{background:var(--beige)}
+  .policy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+  .policy-card{
+    background:#fff;padding:32px;border-radius:var(--radius);
+    border-left:4px solid var(--sage);box-shadow:0 4px 18px rgba(0,0,0,.04);
+  }
+  .policy-card h3{color:var(--rose-gold-dark);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  .policy-card h3 i{color:var(--sage-dark)}
+  .policy-card p, .policy-card li{color:var(--muted);font-size:.95rem}
+  .policy-card ul{padding-left:18px;margin-top:8px}
+
+  /* ===== CONTACT ===== */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  @media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+  .info-card{background:var(--beige);padding:36px;border-radius:var(--radius)}
+  .info-card h3{color:var(--rose-gold-dark);margin-bottom:20px}
+  .info-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px}
+  .info-item i{
+    width:42px;height:42px;border-radius:50%;
+    background:var(--pink-soft);color:var(--rose-gold);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .info-item strong{display:block;color:var(--ink);margin-bottom:2px}
+  .info-item span{color:var(--muted);font-size:.95rem}
+
+  form{display:flex;flex-direction:column;gap:16px}
+  form input, form select, form textarea{
+    padding:14px 18px;border:1px solid var(--pink);
+    border-radius:12px;background:#fff;font-family:inherit;font-size:.95rem;
+    transition:.3s;
+  }
+  form input:focus, form select:focus, form textarea:focus{
+    outline:none;border-color:var(--rose-gold);box-shadow:0 0 0 3px rgba(183,110,121,.12);
+  }
+  form textarea{resize:vertical;min-height:120px}
+
+  .map{margin-top:50px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);height:400px}
+  .map iframe{width:100%;height:100%;border:0}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--ink);color:#e9dede;padding:70px 0 24px}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+  @media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:500px){.footer-grid{grid-template-columns:1fr}}
+  footer h4{font-family:'Cormorant Garamond',serif;color:#fff;margin-bottom:20px;font-size:1.4rem}
+  footer ul{list-style:none}
+  footer ul li{margin-bottom:10px}
+  footer ul a{color:#c9b8b8;font-size:.9rem}
+  footer ul a:hover{color:var(--pink)}
+  .socials{display:flex;gap:14px;margin-top:18px}
+  .socials a{
+    width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.15);
+    display:flex;align-items:center;justify-content:center;color:#fff;
+  }
+  .socials a:hover{background:var(--rose-gold);border-color:var(--rose-gold)}
+  .copy{text-align:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:.8rem;color:#9a8989}
+
+  /* ===== FLOATING BUTTONS ===== */
+  .float-btns{position:fixed;bottom:24px;right:24px;z-index:90;display:flex;flex-direction:column;gap:12px}
+  .float-btn{
+    width:60px;height:60px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:1.5rem;box-shadow:0 8px 24px rgba(0,0,0,.2);
+    transition:.3s;
+  }
+  .float-btn:hover{transform:scale(1.08)}
+  .wa{background:#25D366}
+  .book{background:var(--rose-gold);font-size:1.2rem;width:auto;padding:0 22px;border-radius:30px;font-family:'Jost',sans-serif;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;gap:8px}
+  .book i{font-size:1rem}
+
+  /* ===== ANIMATIONS ===== */
+  .fade-in{opacity:0;transform:translateY(30px);transition:1s}
+  .fade-in.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <nav>
+    <a href="#home" class="logo">
+      <!-- Replace src with your logo file -->
+      <img src="Logo.jpg" alt="Binda Beauty SZ Logo" onerror="this.style.display='none'">
+      <span>Binda Beauty SZ<small>Manzini · Eswatini</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#policies">Policies</a></li>
+    </ul>
+    <button class="burger" onclick="document.getElementById('navLinks').classList.toggle('open')"><i class="fas fa-bars"></i></button>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="eyebrow">Braiding Salon · Manzini</span>
+    <h1>Binda <em>Beauty</em> SZ</h1>
+    <p>Where every braid is crafted with care, precision and love. Step into Manzini's most elegant braiding sanctuary.</p>
+    <div class="hero-cta">
+      <a href="#prices" class="btn"><i class="fas fa-calendar-heart"></i> Book Now</a>
+      <a href="#services" class="btn btn-outline" style="color:#fff;border-color:#fff">View Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="Logo.jpg" alt="Beautiful braids">
+      </div>
+      <div>
+        <span class="eyebrow">About Us</span>
+        <h2>A sanctuary for <em>beautiful braids</em></h2>
+        <p>Binda Beauty SZ is a braiding studio nestled in the heart of Manzini, Eswatini. We specialise exclusively in braiding,from elegant knotless and box braids to detailed cornrows, twists, and protective styles.</p>
+        <p>Every appointment is a personal experience,we use premium hair, gentle techniques, and take the time your hair deserves.</p>
+        <ul>
+          <li><i class="fas fa-check"></i> Specialist braiders only</li>
+          <li><i class="fas fa-check"></i> Premium quality hair & products</li>
+          <li><i class="fas fa-check"></i> Hygienic, relaxing environment</li>
+          <li><i class="fas fa-check"></i> Personalised consultations</li>
+        </ul>
+        <a href="#location" class="btn">Visit Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Services</span>
+      <h2>Braiding, perfected</h2>
+      <p>We focus on one craft and we do it beautifully. Choose from our most-loved braiding styles.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="img"><img src="Knotless_3.png" alt="Knotless Braids"></div>
+        <div class="body">
+          <h3>Knotless Braids</h3>
+          <p>Lightweight, scalp-friendly and effortlessly elegant — our signature style.</p>
+          <div class="price"><small>From</small><span class="amount">E 200</span></div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img"><img src="Burgundy goddess .jpg" alt="Goddess Braids"></div>
+        <div class="body">
+          <h3>Goddess Braids</h3>
+          <p>Classic, bold and long-lasting. Available in all sizes and lengths.</p>
+          <div class="price"><small>From</small><span class="amount">E 300</span></div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img"><img src="French curls M.jpg" alt="french curls"></div>
+        <div class="body">
+          <h3>Frech curls</h3>
+          <p>Sleek, intricate patterns crafted with precision and creativity.</p>
+          <div class="price"><small>From</small><span class="amount">E 200</span></div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img"><img src="Short fulani_3.png"alt="Fulani"></div>
+        <div class="body">
+          <h3>Fulani Braids</h3>
+          <p>Soft, come to us for a refined and feminine finish.</p>
+          <div class="price"><small>From</small><span class="amount">E 250</span></div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img"><img src="softdred.jpg" alt="Faux Locs"></div>
+        <div class="body">
+          <h3>Faux Locs</h3>
+          <p>Beautiful, bohemian locs without the long-term commitment.</p>
+          <div class="price"><small>From</small><span class="amount">E 350</span></div>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="img"><img src="Pondi.png" alt="ponytale"></div>
+        <div class="body">
+          <h3>Pony Tale</h3>
+          <p>Gentle, fun braiding sessions for our youngest queens.</p>
+          <div class="price"><small>From</small><span class="amount">E 150</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICE LIST ===== -->
+<section class="pricelist" id="prices">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Price List</span>
+      <h2>Transparent <em>pricing</em></h2>
+      <p>All prices are starting prices in Emalangeni (E). Final cost depends on hair length, size and quantity.</p>
+    </div>
+
+    <div class="price-category">
+      <h3>Knotless Braids</h3>
+      <div class="price-table">
+<div class="price-row"><div><div class="name">Small Knotless</div><div class="desc">normal length</div></div><div class="cost">E 400</div></div>
+        <div class="price-row"><div><div class="name">Small Medium Knotless</div><div class="desc">normal length</div></div><div class="cost">E 300</div></div>
+        <div class="price-row"><div><div class="name">Medium Knotless</div><div class="desc">normal length</div></div><div class="cost">E 250</div></div>
+        <div class="price-row"><div><div class="name">Large Knotless</div><div class="desc">normal length</div></div><div class="cost">E 230</div></div>
+        <div class="price-row"><div><div class="name">Jumbo Knotless</div><div class="desc">normal length</div></div><div class="cost">E 200</div></div>
+<div class="price-row"><div><div class="name">Extra small Knotless</div><div class="desc">normal length</div></div><div class="cost">E 450</div></div>
+      </div>
+    </div>
+
+    <div class="price-category">
+      <h3>short knotless Braids</h3>
+      <div class="price-table">
+<div class="price-row"><div><div class="name">Small Knotless</div><div class="desc">short length</div></div><div class="cost">E 300</div></div>
+        <div class="price-row"><div><div class="name">Small Medium Knotless</div><div class="desc">short length</div></div><div class="cost">E 250</div></div>
+        <div class="price-row"><div><div class="name">Medium Knotless</div><div class="desc">short length</div></div><div class="cost">E 200</div></div>
+        <div class="price-row"><div><div class="name">Large Knotless</div><div class="desc">short length</div></div><div class="cost">E 170</div></div>
+        <div class="price-row"><div><div class="name">Jumbo Knotless</div><div class="desc">short length</div></div><div class="cost">E 150</div></div>
+<div class="price-row"><div><div class="name">Extra small Knotless</div><div class="desc">short length</div></div><div class="cost">E 400</div></div>
+      </div>
+    </div>
+
+    <div class="price-category">
+      <h3>Goddess Braids</h3>
+      <div class="price-table">
+      <div class="price-row"><div><div class="name">Small Knotless</div><div class="desc">short length</div></div><div class="cost">E 500</div></div>
+        <div class="price-row"><div><div class="name">Small Medium Knotless</div><div class="desc">short length</div></div><div class="cost">E 450</div></div>
+        <div class="price-row"><div><div class="name">Medium Knotless</div><div class="desc">short length</div></div><div class="cost">E 400</div></div>
+        <div class="price-row"><div><div class="name">Large Knotless</div><div class="desc">short length</div></div><div class="cost">E 350</div></div>
+        <div class="price-row"><div><div class="name">Jumbo Knotless</div><div class="desc">short length</div></div><div class="cost">E 300</div></div>
+<div class="price-row"><div><div class="name">Extra small Knotless</div><div class="desc">short length</div></div><div class="cost">E 550</div></div>
+
+      </div>
+    </div>
+
+    <div class="price-category">
+      <h3>french Curls</h3>
+      <div class="price-table">
+       <div class="price-row"><div><div class="name">Small </div><div class="desc">normal length</div></div><div class="cost">E 450</div></div>
+        <div class="price-row"><div><div class="name">Small Medium </div><div class="desc">normal length</div></div><div class="cost">E 350</div></div>
+        <div class="price-row"><div><div class="name">Medium </div><div class="desc">normal length</div></div><div class="cost">E 300</div></div>
+        <div class="price-row"><div><div class="name">Large </div><div class="desc">normal length</div></div><div class="cost">E 250</div></div>
+        <div class="price-row"><div><div class="name">Jumbo </div><div class="desc">normal length</div></div><div class="cost">E 200</div></div>
+<div class="price-row"><div><div class="name">Extra small </div><div class="desc">normal length</div></div><div class="cost">E 550</div></div>
+
+      </div>
+    </div>
+ <div class="price-category">
+      <h3> Goddess french Curls</h3>
+      <div class="price-table">
+       <div class="price-row"><div><div class="name">Small </div><div class="desc">normal length</div></div><div class="cost">E 625</div></div>
+        <div class="price-row"><div><div class="name">Small Medium </div><div class="desc">normal length</div></div><div class="cost">E 550</div></div>
+        <div class="price-row"><div><div class="name">Medium </div><div class="desc">normal length</div></div><div class="cost">E 475</div></div>
+        <div class="price-row"><div><div class="name">Large </div><div class="desc">normal length</div></div><div class="cost">E 370</div></div>
+        <div class="price-row"><div><div class="name">Jumbo </div><div class="desc">normal length</div></div><div class="cost">E 300</div></div>
+<div class="price-row"><div><div class="name">Extra small </div><div class="desc">normal length</div></div><div class="cost">E 750</div></div>
+
+      </div>
+    </div>
+
+
+    <div class="price-category">
+      <h3>Flat Braids</h3>
+      <div class="price-table">
+        <div class="price-row"><div><div class="name">Fulani braids</div></div><div class="cost">E 310</div></div>
+        <div class="price-row"><div><div class="name">Stitch Braids</div></div><div class="cost">E 230</div></div>
+        <div class="price-row"><div><div class="name">Straight up</div></div><div class="cost">E 300</div></div>
+<div class="price-row"><div><div class="name">Goddess Fulani</div></div><div class="cost">E 450</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Work</span>
+      <h2>The <em>gallery</em></h2>
+      <p>A glimpse into our braiding artistry.</p>
+    </div>
+    <div class="gallery">
+      <img src="Stitch braids.png" alt="Braids">
+      <img src="Short goddes french.png" alt="Braids">
+      <img src="Straight up.jpg" alt="Braids">
+      <img src="Bald braids.png" alt="Braids">
+      <img src="Jayda wayda.JPG" alt="Braids">
+      <img src="fulani godd.jpg" alt="Braids">
+      <img src="Jumbo knotless.png" alt="Braids">
+      <img src="goddess.jpg" alt="Braids">
+      <img src="Knotless M.png" alt="Braids">
+    </div>
+  </div>
+</section>
+
+<!-- ===== POLICIES ===== -->
+<section class="policies" id="policies">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Salon Policies</span>
+      <h2>What you should <em>know</em></h2>
+    </div>
+    <div class="policy-grid">
+
+      <div class="policy-card">
+        <h3><i class="fas fa-calendar-check"></i> Booking Policy</h3>
+        <p>
+Booking Requirements
+All appointments must be booked at least 24
+hours in advance. Last-minute and same-day
+appointments will not be accepted.
+Verbal bookings are not allowed.
+A 50% non-refundable deposit secures your
+appointment.Your appointment is not confirmed
+until the deposit has been received.
+</p>
+      </div>
+
+      <div class="policy-card">
+        <h3><i class="fas fa-credit-card"></i>Cancellation Policy</h3>
+        <p>
+We do understand that sometimes schedule adjustments are
+necessary;
+Therefore, we respectfully request at least immediate notice for
+cancellation
+Failure to show up at your scheduled time, will lead to your
+appointment being canceled immediately.The deposit is non-
+refundable, and no exceptions will be made. We do not
+reschedule appointments.If you miss your appointment, you will
+need to book a new one with a new deposit.
+By booking an appointment, you acknowledge and
+agree to these terms. THANK YOU.</p>
+      </div>
+
+      <div class="policy-card">
+        <h3><i class="fas fa-heart-pulse"></i> Health & Safety</h3>
+        <p>All tools are sanitised between clients. We work in a clean, hygienic environment and ask that clients let us know of any scalp sensitivities.</p>
+      </div>
+
+      <div class="policy-card">
+        <h3><i class="fas fa-clock"></i> Late Policy</h3>
+        <p>OF COURSE, LIFE HAPPENS - WE GET IT.
+IF YOU ARE RUNNING LATE PLEASE CALL AND INFORM US.
+HOWEVER, WE GENERALLY ALLOW 20MIN GRACE PERIOD WITH
+A E35 LATE COMING FEE
+45MIN LATE WILL RESULT IN YOUR APPOINTMENT BEING
+CANCELLED.</p>
+      </div>
+
+      <div class="policy-card">
+        <h3><i class="fas fa-shield-halved"></i> Privacy Policy</h3>
+        <p>Your personal details are kept confidential and used only for booking. Client photos are shared on social media only with your permission.</p>
+      </div>
+
+      <div class="policy-card">
+        <h3><i class="fas fa-hand-holding-heart"></i> Children & Guests</h3>
+        <p>To maintain a relaxing atmosphere, please limit extra guests. Children should only attend if they have their own appointment.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / LOCATION ===== -->
+<section id="location">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Visit Us</span>
+      <h2>Location & <em>contact</em></h2>
+    </div>
+    <div class="contact-grid">
+
+      <div class="info-card">
+        <h3>Get in touch</h3>
+        <div class="info-item"><i class="fas fa-location-dot"></i><div><strong>Matsapha New Camp</strong><span>Manzini, Eswatini<br>(Exact location shared upon booking)</span></div></div>
+        <div class="info-item"><i class="fas fa-phone"></i><div><strong>Phone</strong><span>+268 78141760</span></div></div>
+        <div class="info-item"><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><span>+268 79274249</span></div></div>
+        <div class="info-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>bindabeauty02@gmail.com</span></div></div>
+        <div class="info-item"><i class="far fa-clock"></i><div><strong>Opening Hours</strong><span>Mon – Sat: 8:00 AM – 5:00 PM :By appointment only<br>Sun:9:00 AM- 3:00 PM By appointment only</span></div></div>
+      </div>
+
+      <form onsubmit="event.preventDefault(); const m='Hi Binda Beauty SZ! '+encodeURIComponent(this.name.value+' — '+this.service.value+' — '+this.message.value); window.open('https://wa.me/26879274249?text='+m,'_blank');">
+        <h3 style="font-family:'Cormorant Garamond',serif;color:var(--rose-gold-dark);margin-bottom:8px;">Book your appointment</h3>
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="tel" name="phone" placeholder="Your phone number" required>
+        <select name="service" required>
+          <option value="">Select a service</option>
+          <option>Knotless Braids</option>
+          <option>Goddess Braids</option>
+          <option>Cornrows</option>
+          <option>french Curls</option>
+          <option>Goddess french Curls</option>
+          <option>Flat Braids</option>
+          <option>Other</option>
+        </select>
+        <input type="date" name="date" required>
+        <textarea name="message" placeholder="Tell us about your desired style..."></textarea>
+        <button type="submit" class="btn"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+      </form>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=Manzini,Eswatini&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Binda Beauty SZ</h4>
+        <p style="color:#c9b8b8;font-size:.9rem">Luxury braiding studio in Manzini, Eswatini. Crafting beautiful braids with love and precision.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/binda_beauty_sz?igsh=OW5vc3M2cnR0dG9r&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1G7SNm6GST/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/@binda_beauty_sz?_r=1&_t=ZS-96gmV6CUBXQ" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/26879274249" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#policies">Policies</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Manzini, Eswatini</li>
+          <li>+268 79274249/+268 78141760</li>
+          <li>bindabeauty02@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr"></span> Binda Beauty SZ · All rights reserved · Made with love in Eswatini</div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="float-btns">
+  <a href="https://wa.me/26879274249?text=Hi%20Binda%20Beauty%20SZ%2C%20I%27d%20like%20to%20book%20an%20appointment" target="_blank" class="float-btn wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="#location" class="float-btn book"><i class="fas fa-calendar-heart"></i> Book</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+  // fade-in
+  const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.12});
+  document.querySelectorAll('section').forEach(s=>{s.classList.add('fade-in');io.observe(s);});
+</script>
+</body>
+</html>
